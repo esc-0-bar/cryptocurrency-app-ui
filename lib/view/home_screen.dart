@@ -1,8 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cryptocurrency_app_ui/constant/app_constant.dart';
 import 'package:cryptocurrency_app_ui/constant/color.dart';
+import 'package:cryptocurrency_app_ui/constant/screen_name.dart';
 import 'package:cryptocurrency_app_ui/constant/string.dart';
 import 'package:cryptocurrency_app_ui/helper/home_screen_bg.dart';
+import 'package:cryptocurrency_app_ui/helper/navigatior_push_named.dart';
 import 'package:cryptocurrency_app_ui/util/long_button.dart';
 import 'package:cryptocurrency_app_ui/util/widget_body.dart';
 import "package:flutter/material.dart";
@@ -28,11 +30,11 @@ class HomeScreen extends StatelessWidget {
             gap,
             AutoSizeText(homeBodyText, style: bodyStyle(context)),
             gap,
-            longButton(
-                signIn, context, primaryButton, buttonTextStyle(context)),
+            longButton(signIn, context, primaryButton, buttonTextStyle(context),
+                goTo(context, signInScreen)),
             gap,
-            longButton(
-                getStarted, context, secondaryButton, buttonTextStyle(context)),
+            longButton(getStarted, context, secondaryButton,
+                buttonTextStyle(context), goTo(context, signInScreen)),
             gap
           ],
         ),

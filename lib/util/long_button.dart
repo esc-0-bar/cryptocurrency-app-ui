@@ -2,9 +2,9 @@ import 'package:cryptocurrency_app_ui/constant/app_constant.dart';
 import 'package:flutter/material.dart';
 
 ElevatedButton longButton(
-    String text, BuildContext context, Color color, TextStyle? textStyle) {
+    String text, BuildContext context, Color color, TextStyle? textStyle, void Function()? onPressed) {
   return ElevatedButton(
-    onPressed: () {},
+    onPressed: onPressed,
     style: ElevatedButton.styleFrom(
         primary: color,
         textStyle: textStyle,
