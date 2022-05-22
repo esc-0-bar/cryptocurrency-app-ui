@@ -6,8 +6,8 @@ Strictly followed clean code architecture.
 This project screens are ready to use with any state management.
 ## Please leave a ⭐ if you like it 💙
 ## How it looks:
-![dashboard]()
-![sign_in]()
+<img width="388" alt="dashboard" src="https://raw.githubusercontent.com/esc-0-bar/cryptocurrency_app_ui/main/screenshot/dashboard.png">
+<img width="388" alt="sign_in" src="https://raw.githubusercontent.com/esc-0-bar/cryptocurrency_app_ui/main/screenshot/sign_in.png">
 
 ### Dependencies
 - [flutter_svg]
